@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/tv_num1"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/tv_num1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_num2"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/tv_num2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_num1" />
+
+    <EditText
+        android:id="@+id/et_n1"
+        android:layout_width="194dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_num1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_num1" />
+
+    <EditText
+        android:id="@+id/et_n2"
+        android:layout_width="198dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_num2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_num2"
+        tools:text="@string/et_n2" />
+
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_width="243dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/tv_answer"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_n2" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="164dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="88dp"
+        android:onClick="add"
+        android:text="@string/btn_add"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_answer" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="164dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="24dp"
+        android:onClick="sub"
+        android:text="@string/btn_sub"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_add"
+        app:layout_constraintStart_toEndOf="@+id/btn_add" />
+
+    <Button
+        android:id="@+id/btn_maltifly"
+        android:layout_width="164dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:onClick="mul"
+        android:text="@string/btn_maltifly"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add" />
+
+    <Button
+        android:id="@+id/btn_devision"
+        android:layout_width="164dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="24dp"
+        android:onClick="devide"
+        android:text="@string/btn_devision"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_maltifly"
+        app:layout_constraintStart_toEndOf="@+id/btn_maltifly" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

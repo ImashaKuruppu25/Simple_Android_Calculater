@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IntentsProject</string>
+    <string name="tv" />
+    <string name="tv_num1">Number 01</string>
+    <string name="tv_num2">Number 02</string>
+    <string name="et_n1" />
+    <string name="et_n2" />
+    <string name="btn_ok">OK</string>
+    <string name="tv_answer" />
+    <string name="btn_add">+</string>
+    <string name="btn_sub">-</string>
+    <string name="btn_maltifly">*</string>
+    <string name="btn_devision">/</string>
+    <string name="et_toast">Opening Calculater</string>
+</resources>
